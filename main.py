@@ -13,8 +13,8 @@ from ui import MainWidget
 
 class Main(MainWidget):
     CONFIGS_DIR = 'configs'
-    LOCATIONS_PATH = 'locations.json'
-    DEFAULT_CONFIG_PATH = 'default.ovpn'
+    LOCATIONS_PATH = 'resources/locations.json'
+    DEFAULT_CONFIG_PATH = 'resources/default.ovpn'
 
     def __init__(self, parent=None):
         super().__init__(parent)

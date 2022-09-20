@@ -59,7 +59,7 @@ class MainWidget(QWidget):
         button.clicked.connect(self.on_click)
 
         self.setWindowTitle('Surfshark Config Generator')
-        self.setWindowIcon(QIcon('app.ico'))
+        self.setWindowIcon(QIcon('resources/app.ico'))
 
     # Generate Button Clicked
     def on_click(self):
