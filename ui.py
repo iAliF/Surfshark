@@ -1,3 +1,6 @@
+import ctypes
+import os
+
 from PySide6.QtCore import QRect, Qt
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QComboBox, QLabel, QRadioButton, QPushButton, QWidget
@@ -60,6 +63,9 @@ class MainWidget(QWidget):
 
         self.setWindowTitle('Surfshark Config Generator')
         self.setWindowIcon(QIcon('resources/app.ico'))
+
+        if os.name == 'nt':
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('com.github.ialif.surfshark')
 
     # Generate Button Clicked
     def on_click(self):
