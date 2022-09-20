@@ -70,7 +70,7 @@ class Main(MainWidget):
         self.show_message_box(
             QMessageBox.NoIcon,
             'Done',
-            'Config Successfully generated and saved into configs directory',
+            'Config was successfully generated and saved into configs directory',
             False
         )
 
